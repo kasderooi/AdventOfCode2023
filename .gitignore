@@ -19,3 +19,8 @@
 
 # Go workspace file
 go.work
+
+# GoLand file
+.idea
+
+.DS_Store

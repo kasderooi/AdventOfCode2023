@@ -77,9 +77,7 @@ func (c *chart) resolveGears() int {
 			if sym.y > 0 {
 				resolveGear(c, &sym, &parts, -1)
 			}
-			for i := 0; i < len(c.numbers[sym.y]); i++ {
-				resolveGear(c, &sym, &parts, 0)
-			}
+			resolveGear(c, &sym, &parts, 0)
 			if sym.y < c.yMax {
 				resolveGear(c, &sym, &parts, 1)
 			}
